@@ -14,7 +14,18 @@ public class Problema03 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        double fahrenheit = 20;
+        int incremento = 4;
+
+        for (int i = 0; i < 20; i++) {
+  
+            double celsius = (5.0/9.0 * (fahrenheit - 32));
+
+            System.out.println("Fahrenheit | Celsius");
+            System.out.printf("%.2f\t\t%.2f\n", fahrenheit, celsius);
+
+            fahrenheit += incremento;
+        }
     }
-    
 }
+
